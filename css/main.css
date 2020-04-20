@@ -1,0 +1,470 @@
+body {
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* start: global style rules */
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, label, strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: #FF205F;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: #40ABF5;
+}
+
+.badge.tournaments {
+    background-color: #FB6E10;
+}
+
+.badge.premium-tournament {
+    background-color: #FFB320;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+/* end: global style rules */
+
+/* start: header styles */
+header {
+    background-color: #131313;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid #920000;
+}
+
+.header-menu {
+    background-color: transparent;
+    border: 1px solid #920000;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.header-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #920000;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #920000;
+}
+.logo img{
+    width: 50%;
+}
+/* end: header styles */
+/*start: banner sector*/
+.fixed {
+    overflow: hidden;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+.nofixed{ 
+    position: fixed; 
+    overflow-y: scroll;
+    top: 0; right: 0; bottom: 0; left: 0;
+
+}
+main{
+    overflow: visible;
+}
+
+  .card{
+    border-top: 2px solid #920000;
+    margin-top: 10px;
+  }
+  .card h5{
+      color: gray;
+      margin: 0px;
+  }
+  .card h3{
+    margin: 0px;
+}
+  .card p{
+      color: gray;
+  }
+  
+  .postimg {
+    background-color: transparent;
+    width: 10%;
+    padding: 20px;
+    padding-left: 0%;
+    padding-right: 15px;
+
+  }
+  .postimg img{
+      width: 1000%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main-sector{
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: 15%;
+      margin-right: 15%;
+      border-top: 2px solid #920000;
+      border-bottom: 2px solid #920000;
+      background-color: #f0f0f0;
+  }
+    .main-sector-left {
+    float: left;
+    width: 61%;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    background-color: #F9F9F9;
+    border-right: 1px solid #920000;
+    box-sizing: border-box;
+    }
+    .main-sector-left span{
+        color: #920000;
+        margin: 0;
+        padding: 0;
+    }
+    .main-sector-right {
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 39%;
+    
+    box-sizing: border-box;
+      }
+      
+      /* Style the search field */
+      form.search input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid #920000;
+        float: left;
+        width: 60%;
+        background: #f1f1f1;
+      }
+      
+      /* Style the submit button */
+      form.search button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #131313;
+        color: white;
+        font-size: 17px;
+        border: 1px solid #920000;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+      }
+      
+      form.search button:hover {
+        background: #333;
+      }
+      
+      /* Clear floats */
+      form.search::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .news-sector{
+        margin-top: 5px;
+        float: left;
+        } 
+    .news-sector p{
+        margin-right: 30px;
+    }
+    .sponsored-content p{
+        margin-right: 30px;
+    }
+    .sponsored-content{
+        margin-top: 10px;
+        float: left;
+    } 
+  .bck-banner{
+background-color: whitesmoke;
+}
+  /* Clear floats */
+  .main-sector:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .nav-bar-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131313;
+    border-bottom: 1px solid #920000;
+  }
+  .nav-bar-main li{
+      float: left;
+      margin: 0 auto;
+  }
+  .nav-bar-main li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+ 
+    text-decoration: none;
+  }
+  .nav-bar-main li a:hover {
+    background-color: #333;
+    color: #920000;
+  }
+/* start: footer styles */
+footer {
+    background-color: #131313;
+    padding: 25px 0 20px;
+    border-top: 2px solid #920000;
+}
+
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer small .footer-heart {
+    font-size: 16px;
+}
+
+footer small a {
+    color: #007BDC;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}
+footer ul li a:hover {
+    color: #920000;
+}
+/* end: footer styles */
+/* start: media query*/
+@media (max-width:990px){
+    .flex {
+        max-width: 720px;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+        font-size: 0.85em;
+    }
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #920000;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .header-menu {
+        display: block;
+        margin-top: 2px;
+    }
+    footer ul li {
+        margin: 0 10px;
+    }
+
+    footer ul li a {
+        font-size: 0.75em;
+    }
+
+}
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .main-sector-left, .main-sector-right{
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .main-sector {
+        width: 90%;
+        margin: 0 auto;
+        float: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      
+
+
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .main-sector{
+        width: 93%;
+        margin: 0 auto;
+        float: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+  }
+  @media screen and (max-width: 600px) {
+   .searchbox input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .searchbox input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+/* end: media query*/
